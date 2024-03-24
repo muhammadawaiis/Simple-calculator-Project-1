@@ -3,8 +3,8 @@
 import inquirer from "inquirer";
 
 const answer = await inquirer.prompt([
-  { massage: "Enter First Number", type: "number", name: "FirstNumber" },
-  { massage: "Enter Second Number", type: "number", name: "SecondNumber" },
+  { massage: "Enter your First Number", type: "number", name: "FirstNumber" },
+  { massage: "Enter  your Second Number", type: "number", name: "SecondNumber" },
   {
     massage: "Enter any one operator from list",
     type: "list",
@@ -30,3 +30,5 @@ else if (answer.operator === "Divison"){
 else {
     console.log("Select any Opreator");
 }
+
+console.log("The End!")
